@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Santos Bolos e Doces</title>
+    <link rel="stylesheet" href="../../paginas/inicio/inicio.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../../img/img.png">
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="../../paginas/inicio/inicio.html" class="inicio"><img src="../../img/inicio.png">Início</a>
+        <a href="../../paginas/pedidos/pedidos.html" class="pedidos"><img src="../../img/pedidos.png">Pedidos</a>
+        <a href="../../paginas/saibamais/saibamais.html" class="saibamais"><img src="../../img/saibamais.png">Saiba
+            Mais</a>
+        <a href="#modalSair" class="login"><img src="../../img/usuario.png">Perfil</a>
+    </header>
+    <div id="modalSair" class="modal-sair">
+        <div class="modal-content-sair">
+            <span class="close-sair">&times;</span>
+            <div class="perfil-header">
+                <img src="../../img/usuario.png" alt="Usuário" class="perfil-img">
+                <h2>Perfil</h2>
+            </div>
+            <button id="alterarConta">Alterar Conta</button>
+            <button id="confirmarSair">Sair da Conta</button>
+            <button id="apagarConta">Apagar Conta</button>
+        </div>
+    </div>
+    <div id="modalAlterarDados" class="modal"> <div class="modal-content">
+        <span class="close" id="closeAlterarDadosModal">&times;</span>
+        <h2>Alterar Meus Dados</h2>
+        <form id="formAlterarDados">
+            <div class="input-group">
+                <label for="alterarNome">Nome:</label>
+                <input type="text" id="alterarNome" required>
+            </div>
+            <div class="input-group">
+                <label for="alterarTelefone">Telefone:</label>
+                <input type="tel" id="alterarTelefone" pattern="[0-9]{10,11}" placeholder="Ex: 11987654321" required>
+            </div>
+            <button type="submit" class="btn">Salvar Alterações</button>
+        </form>
+    </div>
+</div>
+    <div class="logo-sobreposta">
+        <img src="../../img/logo.png" alt="Logo da loja">
+    </div>
+
+    <section class="info-loja">
+        <div class="texto-loja">
+            <h1>Santos Bolos e Doces</h1>
+            <p><img src="../../img/localizacao.png" alt="Localização"> Belo Horizonte - MG • Mais informações</p>
+        </div>
+    </section>
+
+    <section class="personalize">
+        <h2>Personalize seu bolo!</h2>
+
+        <div class="cards">
+            <div class="card">
+                <img src="../../img/semdecoracao.jpg" alt="Bolo sem decoração" />
+                <div class="card-content">
+                    <h3>Sem decoração</h3>
+                    <p>Bolos simples e caseiros, ideais para o dia a dia. Feitos com muito carinho e ingredientes
+                        selecionados,
+                        perfeitos para um café da tarde ou café da manhã especial.</p>
+                    <a href="#modal-bolo1" class="add">+</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../../img/bolo1.jpg" alt="Bolo com decoração" />
+                <div class="card-content">
+                    <h3>Com decoração</h3>
+                    <p>Bolos decorados com chantilly, pasta americana ou coberturas especiais, personalizados conforme o
+                        tema da
+                        sua festa. Ideais para aniversários, casamentos e comemorações em geral.</p>
+                    <a href="#modal-bolo2" class="add">+</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="docinho">
+        <h2>Escolha seu docinho!</h2>
+        <div class="card">
+            <img src="../../img/doce2.jpg" alt="Docinhos variados" />
+            <div class="card-content">
+                <h3>Docinhos</h3>
+                <p>Variedade de sabores clássicos e especiais: brigadeiro tradicional, brigadeiro branco, ninho,
+                    nutella,
+                    churros, café, limão siciliano e paçoca. Feitos com ingredientes frescos e de alta qualidade.</p>
+                <a href="#modal-docinhos" class="add">+</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="carrinho">
+    <button id="carrinho-botao-principal"> <img src="../../img/carrinho.png"> Clique aqui para ver seu carrinho de compras!
+    </button>
+</div>
+
+    <div class="modal" id="modal-bolo1">
+        <div class="modal-content">
+            <a href="#" class="close">&times;</a>
+            <h2>Bolo Sem Decoração</h2>
+
+            <h3>Escolha a Massa:</h3>
+            <div class="opcoes">
+                <label><input type="radio" name="massa-sem" /> <img src="../../img/massa1.jpg" alt="Red Velvet">Red
+                    Velvet</label>
+                <label><input type="radio" name="massa-sem" /> <img src="../../img/massa2.jpg"
+                        alt="Chocolate">Chocolate</label>
+                <label><input type="radio" name="massa-sem" /> <img src="../../img/massa3.jpg"
+                        alt="Baunilha">Baunilha</label>
+                <label><input type="radio" name="massa-sem" /> <img src="../../img/massa4.jpg"
+                        alt="Cenoura">Cenoura</label>
+            </div>
+
+            <h3>Escolha a Cobertura:</h3>
+            <div class="opcoes">
+                <label><input type="radio" name="cobertura-sem" /><img src="../../img/caldachocolate.jpg"
+                        alt="Cobertura Chocolate">Chocolate</label>
+                <label><input type="radio" name="cobertura-sem" /><img src="../../img/caldafrutasvermelhas.jpg"
+                        alt="Cobertura Frutas Vermelhas">Frutas Vermelhas</label>
+                <label><input type="radio" name="cobertura-sem" /><img src="../../img/caldaninho.jpg"
+                        alt="Cobertura Ninho">Ninho</label>
+                <label><input type="radio" name="cobertura-sem" /><img src="../../img/nenhumaopcao.jpg"
+                        alt="Não desejo cobertura">Não desejo cobertura</label>
+            </div>
+
+            <h3>Tamanho:</h3>
+            <div class="opcoes">
+                <label><input type="radio" name="tamanho-sem" />Pequeno (até 10 pessoas) - R$ 30,00</label>
+                <label><input type="radio" name="tamanho-sem" />Intermediário (até 15 pessoas) - R$ 40,00</label>
+                <label><input type="radio" name="tamanho-sem" />Médio (até 20 pessoas) - R$ 50,00</label>
+            </div>
+
+            <a href="#" class="btn">Adicionar ao carrinho</a>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-bolo2">
+        <div class="modal-content">
+            <a href="#" class="close">&times;</a>
+            <h2>Bolo Com Decoração</h2>
+
+            <h3>Escolha a Massa:</h3>
+            <div class="opcoes">
+                <label><input type="radio" name="massa-com" /> <img src="../../img/massa1.jpg" alt="Red Velvet">Red
+                    Velvet</label>
+                <label><input type="radio" name="massa-com" /> <img src="../../img/massa2.jpg"
+                        alt="Chocolate">Chocolate</label>
+                <label><input type="radio" name="massa-com" /> <img src="../../img/massa3.jpg"
+                        alt="Baunilha">Baunilha</label>
+                <label><input type="radio" name="massa-com" /> <img src="../../img/massa4.jpg"
+                        alt="Cenoura">Cenoura</label>
+            </div>
+
+            <h3>Escolha o Recheio:</h3>
+            <div class="opcoes">
+                <label><input type="radio" name="recheio-com" /><img src="../../img/sabor1.jpg"
+                        alt="Ninho e Frutas Vermelhas">Ninho e Frutas Vermelhas</label>
+                <label><input type="radio" name="recheio-com" /><img src="../../img/sabor2.jpg"
+                        alt="Ninho, Morango e Chocolate">Ninho, Morango e Chocolate</label>
+                <label><input type="radio" name="recheio-com" /><img src="../../img/sabor3.jpg"
+                        alt="Ninho e Nutella">Ninho e
+                    Nutella</label>
+                <label><input type="radio" name="recheio-com" /><img src="../../img/sabor4.jpg"
+                        alt="Prestígio">Prestígio</label>
+            </div>
+
+            <h3>Tamanho:</h3>
+            <div class="opcoes">
+                <label><input type="radio" name="tamanho-com" />Pequeno (até 10 pessoas) - R$ 70,00</label>
+                <label><input type="radio" name="tamanho-com" />Intermediário (até 15 pessoas) - R$ 90,00</label>
+                <label><input type="radio" name="tamanho-com" />Médio (até 20 pessoas) - R$ 110,00</label>
+                <label><input type="radio" name="tamanho-com" />Grande (até 30 pessoas) - R$ 140,00</label>
+            </div>
+
+            <h3>Descrição da Decoração:</h3>
+            <textarea rows="4" placeholder="Descreva como deseja sua decoração..."></textarea>
+
+            <a href="#" class="btn">Adicionar ao carrinho</a>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-docinhos">
+        <div class="modal-content">
+            <a href="#" class="close">&times;</a>
+            <h2>Docinhos</h2>
+
+            <h3>Sabores:</h3>
+            <div class="opcoes">
+                <label><input type="radio" />Brigadeiro Tradicional</label>
+                <label><input type="radio" />Brigadeiro Branco</label>
+                <label><input type="radio" />Ninho</label>
+                <label><input type="radio" />Nutella</label>
+                <label><input type="radio" />Churros</label>
+                <label><input type="radio" />Café</label>
+                <label><input type="radio" />Limão Siciliano</label>
+                <label><input type="radio" />Paçoca</label>
+            </div>
+
+            <h3>Quantidade:</h3>
+            <p>Quantidade mínima: 25 unidades. Valor unitário: R$ 1,50</p>
+            <input type="number" id="quantidade" name="quantidade" min="25" value="25" required>
+
+            <a href="#" class="btn">Adicionar ao carrinho</a>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-carrinho">
+        <div class="modal-content carrinho-modal">
+            <a href="#" class="close">&times;</a>
+            <h2>Seu Carrinho</h2>
+            <div id="itens-carrinho"></div>
+            <p id="total-carrinho">Total: R$ 0,00</p>
+
+            ---
+            <h3>Dados para Contato</h3>
+            <div class="form-group">
+                <label for="nomeCliente">Nome:</label>
+                <input type="text" id="nomeCliente" placeholder="Seu Nome Completo" required>
+            </div>
+            <div class="form-group">
+                <label for="telefoneCliente">Telefone:</label>
+                <input type="tel" id="telefoneCliente" placeholder="(XX) XXXXX-XXXX" required>
+            </div>
+            ---
+
+            <label for="pagamento">Forma de Pagamento:</label>
+            <select id="pagamento">
+                <option value="PIX">PIX</option>
+                <option value="Cartão de Crédito">Cartão de Crédito</option>
+                <option value="Dinheiro">Dinheiro</option>
+            </select>
+
+            <button class="btn" id="finalizar-pedido-btn">Finalizar Pedido</button> 
+        </div>
+    </div>
+    <div id="mensagem" class="mensagem-esconder"></div>
+
+    <script type="module" src="../../paginas/inicio/inicio.js"></script>
+</body>
+
+</html>

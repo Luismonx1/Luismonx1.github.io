@@ -1,0 +1,26 @@
+cff-version: 1.0.1
+message: Sistema para pedidos online e organização de atendimentos em uma doceria
+title: Santos Bolos e Doces
+authors:
+  - family-names: da Silva Lopes
+    given-names: Daniela
+  - family-names: Gustavo de Moura Cena
+    given-names: Luís
+  - family-names: Ferreira Marques
+    given-names: Luísa
+  - family-names: Santana Melo
+    given-names: Josué
+  - family-names: Guimarães Ferreira Neto
+    given-names: Renê 
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Vilela Cardoso
+    given-names: Leonardo
+keywords:
+  - doceria
+  - pedidos online
+  - bolos e doces artesanais
+repository-code: https://github.com/PSG-TIAPN-2022-1/psg-tiapn-2025-1-santos-bolos-e-doces
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2025-06-29

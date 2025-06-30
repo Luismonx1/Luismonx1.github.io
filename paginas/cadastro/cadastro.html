@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro - Santos Bolos e Doces</title>
+    <link rel="stylesheet" href="cadastro.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <img src="/src/img/logo.png" alt="Logo Santos Bolos e Doces" class="logo" />
+        </div>
+        <div class="right-panel">
+            <h1>Cadastro</h1>
+            <form class="caixas" id="cadastroForm">
+                <label for="nome">Nome</label>
+                <div class="input-group">
+                    <span class="icon">👤</span>
+                    <input type="text" id="nome" placeholder="Digite seu nome" required />
+                </div>
+
+                <label for="email">Email</label>
+                <div class="input-group">
+                    <span class="icon">📧</span>
+                    <input type="email" id="email" placeholder="Digite seu email" required />
+                </div>
+
+                <label for="telefone">Telefone</label>
+                <div class="input-group">
+                    <span class="icon">📞</span>
+                    <input type="tel" id="telefone" placeholder="Digite seu número" required pattern="[0-9]{10,11}"
+                        inputmode="numeric" title="Digite apenas números com DDD" />
+                </div>
+
+                <label for="senha">Senha</label>
+                <div class="input-group">
+                    <span class="icon">🔒</span>
+                    <input type="password" id="senha" placeholder="Digite sua senha" required />
+                </div>
+
+                <label for="confirmarSenha">Confirmar Senha</label>
+                <div class="input-group">
+                    <span class="icon">🔒</span>
+                    <input type="password" id="confirmarSenha" placeholder="Confirme sua senha" required />
+                </div>
+
+                <div class="buttons">
+                    <button type="button" id="cadastrarBtn">Cadastrar</button>
+                </div>
+            </form>
+            <p id="feedbackMessage" style="margin-top: 15px; text-align: center; font-weight: bold;"></p>
+        </div>
+    </div>
+    <script src="/src/api.js" type="module"></script>
+    <script src="cadastro.js" type="module"></script>
+</body>
+
+</html>

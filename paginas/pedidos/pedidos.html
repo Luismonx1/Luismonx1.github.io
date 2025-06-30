@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Santos Bolos e Doces - Pedidos</title>
+  <link rel="stylesheet" href="../../paginas/pedidos/pedidos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="../../img/img.png">
+  <script type="module" src="pedidos.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <a href="../../paginas/inicio/inicio.html" class="inicio"><img src="../../img/inicio.png" alt="Início">Início</a>
+    <a href="../../paginas/pedidos/pedidos.html" class="pedidos"><img src="../../img/pedidos.png" alt="Pedidos">Pedidos</a>
+    <a href="../../paginas/saibamais/saibamais.html" class="saibamais"><img src="../../img/saibamais.png" alt="Saiba Mais">Saiba Mais</a>
+    <a href="#" class="login"><span class="icon">👤</span>Entrar/Cadastrar</a>
+  </header>
+
+  <main>
+    <div id="mensagem" class="mensagem mensagem-esconder"></div>
+    <h1>Seus Pedidos</h1>
+    <div class="pedido-container" id="listaPedidos"></div>
+  </main>
+
+  <footer>
+    <p>© 2025 Santos Bolos e Doces. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Modal de Perfil -->
+  <div id="modalSair" class="modal-sair">
+    <div class="modal-content-sair">
+      <span class="close-sair">&times;</span>
+      <div class="perfil-header">
+        <span class="icon">👤</span>
+        <h2 id="userNameDisplay">Perfil</h2>
+      </div>
+      <div class="perfil-options">
+        <button id="alterarConta" class="btn">Alterar Conta</button>
+        <button id="confirmarSair" class="btn btn-sair">Sair da Conta</button>
+        <button id="apagarConta" class="btn btn-apagar">Apagar Conta</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="modalAlterarDados" class="modal-sair">
+    <div class="modal-content-sair">
+      <span class="close-sair" id="closeAlterarDadosModal">&times;</span>
+      <h2>Alterar Meus Dados</h2>
+      <form id="formAlterarDados">
+        <div class="form-group">
+          <label for="alterarNome">Nome:</label>
+          <input type="text" id="alterarNome" required>
+        </div>
+        <div class="form-group">
+          <label for="alterarTelefone">Telefone:</label>
+          <input type="tel" id="alterarTelefone" pattern="[0-9]{10,11}" placeholder="Ex: 11987654321" required>
+        </div>
+        <button type="submit" class="btn">Salvar Alterações</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

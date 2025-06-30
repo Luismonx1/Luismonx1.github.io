@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.left-panel {
+  background-color: #fce7ef;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-panel .logo {
+  max-width: 500px;
+  height: auto;
+}
+
+.right-panel {
+  background-color: #c7b9d5;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form.caixas {
+  width: 80%;
+  max-width: 600px;
+}
+
+h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #333;
+  margin-left: -495px;
+}
+
+label {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  display: block;
+  margin-top: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  background-color: #e8e8e8;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.input-group .icon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.input-group input {
+  border: none;
+  background: none;
+  flex: 1;
+  outline: none;
+  font-size: 16px;
+  width: 50px;
+}
+
+.buttons {
+  display: flex;
+  gap: 17px;
+  margin-top: 30px;
+}
+
+.buttons button {
+  font-family: 'Quicksand', sans-serif;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+}
+
+.buttons button:hover {
+  background-color: #bf96e9;
+}
+
+.forgot {
+  display: block;
+  margin-top: 80px;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #ffffff;
+  margin: 10% auto;
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  position: relative;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.close {
+  color: #888;
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #000;
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+  color: #5a2a82;
+  text-align: center;
+  font-weight: bold;
+}
+
+.modal-content label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+  margin-top: 15px;
+  color: #444;
+  font-weight: 600;
+}
+
+.modal-content input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.modal-content input[type="email"]:focus {
+  border-color: #b58fe2;
+  outline: none;
+}
+
+#enviarEmailBtn {
+  margin-top: 25px;
+  width: 100%;
+  padding: 12px;
+  background-color: #b58fe2;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#enviarEmailBtn:hover {
+  background-color: #9b6ad3;
+}
+
+#mensagemEmail {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+@media(max-width: 1024px){
+
+  .container {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .left-panel, .right-panel {
+    width: 100%;
+    height: 50%;
+  }
+
+  .logo{
+    max-width: 400px;
+  }
+
+  h1 {
+    margin-left: 15;
+    text-align: center;
+  }
+
+  form.caixas {
+    width: 90%;
+  }
+}
+
+@media(max-width: 600px){
+
+  .logo{
+    max-width: 30%;
+  }
+  .container {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .left-panel, .right-panel {
+    width: 100%;
+    height: 50%;
+  }
+
+  .left-panel .logo {
+    max-width: 70%;
+  }
+
+  h1 {
+    font-size: 32px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  label {
+    font-size: 18px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .buttons {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .buttons button {
+    width: auto;
+  }
+
+  .forgot {
+    margin-top: 30px;
+  }
+}
+
+@media(max-width: 430px){
+
+  .container {
+    flex-direction: column;
+  }
+  
+  .left-panel, .right-panel {
+    height: 100%;
+  }
+  
+  .right-panel {
+    padding: 40px 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+    margin-bottom: 0px;
+    margin-top:20px ;
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  .input-group {
+    padding: 8px;
+  }
+
+  .input-group input {
+    font-size: 14px;
+  }
+
+  #enviarEmailBtn {
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .modal-content {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .buttons {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .buttons button {
+    width: auto;
+  }
+
+  .logo {
+    max-width: 60px;
+  }
+}

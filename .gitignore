@@ -1,0 +1,31 @@
+# Node modules
+node_modules/
+dist/
+build/
+.npm/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# OS generated files
+.DS_Store
+.vscode/ # Optional: If you don't want to commit VS Code settings (e.g. launch.json)
+
+# Optional: If using Jest for testing
+coverage/
+
+# Optional: If using TypeScript
+*.tsbuildinfo

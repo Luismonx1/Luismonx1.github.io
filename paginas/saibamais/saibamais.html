@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Santos Bolos e Doces</title>
+    <link rel="stylesheet" href="../../paginas/saibamais/saibamais.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../../img/img.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="saibamais.js" type="module"></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="../../paginas/inicio/inicio.html" class="inicio"><img src="../../img/inicio.png">Início</a>
+        <a href="../../paginas/pedidos/pedidos.html" class="pedidos"><img src="../../img/pedidos.png">Pedidos</a>
+        <a href="../../paginas/saibamais/saibamais.html" class="saibamais"><img src="../../img/saibamais.png">Saiba <r>
+            </r> mais</a>
+        <a href="../../paginas/login/login.html" class="login"><img src="../../img/usuario.png">Entrar/Cadastrar</a>
+    </header>
+    <div id="modalSair" class="modal-sair">
+        <div class="modal-content-sair">
+            <span class="close-sair">&times;</span>
+            <div class="perfil-header">
+                <img src="../../img/usuario.png" alt="Usuário" class="perfil-img">
+                <h2 id="userNameDisplay">Perfil</h2>
+            </div>
+            <button id="alterarConta">Alterar Conta</button>
+            <button id="confirmarSair">Sair da Conta</button>
+            <button id="apagarConta">Apagar Conta</button>
+        </div>
+    </div>
+    <div id="modalAlterarDados" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeAlterarDadosModal">&times;</span>
+            <h2>Alterar Meus Dados</h2>
+            <form id="formAlterarDados">
+                <div class="input-group">
+                    <label for="alterarNome">Nome:</label>
+                    <input type="text" id="alterarNome" required>
+                </div>
+                <div class="input-group">
+                    <label for="alterarTelefone">Telefone:</label>
+                    <input type="tel" id="alterarTelefone" pattern="[0-9]{10,11}" placeholder="Ex: 11987654321" required>
+                </div>
+                <button type="submit" class="btn">Salvar Alterações</button>
+            </form>
+        </div>
+    </div>
+    <div id="mensagem" class="mensagem-esconder"></div>
+    <div class="sobre">
+        <img src="/src/img/bolo.png" alt="Imagem de bolo">
+        <p id="title">Sobre</p>
+        <p>Bem-vindo à Santos Bolos e Doces! Nossa confeitaria é especializada em criar bolos e doces deliciosos,
+            perfeitos para todas as ocasiões. Usamos ingredientes de alta qualidade e técnicas tradicionais para
+            garantir que cada pedaço seja uma experiência inesquecível.
+        </p>
+    </div>
+    <div class="avaliaçoes">
+        <p id="title">Avaliações</p>
+        <div class="card">
+            <img src="/src/img/usuario.png" alt="Imagem de Usúario padrão">
+            <p id="nome">Josué</p>
+            <p> 04/05/25</p>
+            <div class="card-content">
+                <p>"O bolo estava simplesmente maravilhoso, super fofinho e com o recheio no ponto certo!"</p>
+            </div>
+        </div>
+        <div class="card2">
+            <img src="/src/img/usuario.png" alt="Imagem de Usúario padrão">
+            <p id="nome">Luís</p>
+            <p>02/05/25</p>
+            <div class="card-content2">
+                <p>"Os docinhos foram o destaque da festa, todos elogiaram. Voltarei a encomendar com certeza!"</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <footer>
+            <P>© 2025 Santos Bolos e Doces. Todos os direitos reservados.</P>
+        </footer>
+</body>
+
+</html>
