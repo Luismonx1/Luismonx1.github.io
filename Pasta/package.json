@@ -1,0 +1,22 @@
+{
+  "name": "psg-tiapn-2025-1-santos-bolos-e-doces",
+  "version": "1.0.0",
+  "description": "`CURSO`\r Sistemas de Informação",
+  "main": "src/api.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PSG-TIAPN-2022-1/psg-tiapn-2025-1-santos-bolos-e-doces.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PSG-TIAPN-2022-1/psg-tiapn-2025-1-santos-bolos-e-doces/issues"
+  },
+  "homepage": "https://github.com/PSG-TIAPN-2022-1/psg-tiapn-2025-1-santos-bolos-e-doces#readme"
+}
